@@ -44,10 +44,12 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.lblPradap = new System.Windows.Forms.Label();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tabCheval.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -203,6 +205,7 @@
             // 
             // tabCheval
             // 
+            this.tabCheval.Controls.Add(this.lblPradap);
             this.tabCheval.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabCheval.Location = new System.Drawing.Point(4, 28);
             this.tabCheval.Name = "tabCheval";
@@ -211,6 +214,16 @@
             this.tabCheval.TabIndex = 0;
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
+            // 
+            // lblPradap
+            // 
+            this.lblPradap.AutoSize = true;
+            this.lblPradap.Font = new System.Drawing.Font("AR BLANCA", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPradap.Location = new System.Drawing.Point(432, 212);
+            this.lblPradap.Name = "lblPradap";
+            this.lblPradap.Size = new System.Drawing.Size(129, 32);
+            this.lblPradap.TabIndex = 0;
+            this.lblPradap.Text = "Pradap ! ";
             // 
             // Fgeneral
             // 
@@ -226,6 +239,8 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tabCheval.ResumeLayout(false);
+            this.tabCheval.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +263,7 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.Label lblPradap;
 
     }
 }
