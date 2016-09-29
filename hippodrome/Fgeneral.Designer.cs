@@ -44,10 +44,12 @@
             this.dgCourses = new System.Windows.Forms.DataGridView();
             this.tabgeneral = new System.Windows.Forms.TabControl();
             this.tabCheval = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabCourse.SuspendLayout();
             this.gbDetailCourse.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).BeginInit();
             this.tabgeneral.SuspendLayout();
+            this.tabCheval.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabCourse
@@ -203,7 +205,8 @@
             // 
             // tabCheval
             // 
-            this.tabCheval.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabCheval.Controls.Add(this.label1);
+            this.tabCheval.Font = new System.Drawing.Font("Wide Latin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabCheval.Location = new System.Drawing.Point(4, 28);
             this.tabCheval.Name = "tabCheval";
             this.tabCheval.Padding = new System.Windows.Forms.Padding(3);
@@ -211,6 +214,17 @@
             this.tabCheval.TabIndex = 0;
             this.tabCheval.Text = "Les chevaux";
             this.tabCheval.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Wide Latin", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(6, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(448, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manon DUFAU, déléguée malgré elle";
             // 
             // Fgeneral
             // 
@@ -226,6 +240,8 @@
             this.gbDetailCourse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCourses)).EndInit();
             this.tabgeneral.ResumeLayout(false);
+            this.tabCheval.ResumeLayout(false);
+            this.tabCheval.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -248,6 +264,7 @@
         private System.Windows.Forms.DataGridView dgCourses;
         private System.Windows.Forms.TabControl tabgeneral;
         private System.Windows.Forms.TabPage tabCheval;
+        private System.Windows.Forms.Label label1;
 
     }
 }
